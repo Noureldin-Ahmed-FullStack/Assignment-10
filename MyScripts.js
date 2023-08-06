@@ -3,6 +3,7 @@ var myObj
 var MyData = JSON.parse(localStorage.getItem('Accounts'))
 if (MyData == null) {
   MyData = { name: "Username", Em: "E_Mail", password: "Pass" }
+  localStorage.setItem('Accounts', JSON.stringify(MyData))
 }
 
 
