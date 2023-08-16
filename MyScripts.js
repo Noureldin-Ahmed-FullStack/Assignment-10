@@ -1,6 +1,6 @@
 var IsLogging = true
 var myObj
-var MyData = JSON.parse(localStorage.getItem('Accounts'))
+var MyData = [1,JSON.parse(localStorage.getItem('Accounts'))]
 if (MyData == null) {
   MyData = [{ name: "1", Em: "2", password: "3" },{ name: "Username", Em: "E_Mail", password: "Pass" }]
   localStorage.setItem('Accounts', JSON.stringify(MyData))
