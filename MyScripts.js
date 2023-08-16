@@ -90,6 +90,7 @@ function SignUpFunc() {
                 }
                 if (flag == true) {
                     console.log(MyData)
+                    console.log(myObj)
                     MyData.push(myObj)
                     localStorage.setItem('Accounts', JSON.stringify(MyData))
                     document.getElementById("ErrorArea").innerHTML = `<p class = "text-success">Email registered successully!</p>`
